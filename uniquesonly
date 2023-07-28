@@ -1,0 +1,9 @@
+// Get the values from the two columns
+const column1Values = entry.get(p1);
+const column2Values = entry.get(p2);
+
+// Filter the unique values from the first column
+const uniqueValues = column1Values.filter(value => !column2Values.includes(value));
+
+// Return the unique values as a string
+return uniqueValues.join(', ');
